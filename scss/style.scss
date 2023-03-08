@@ -119,7 +119,8 @@ a {
 			transition: all 0.2s ease-out;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			&::after {
 				left: 0;
 				width: 100%;
@@ -270,11 +271,13 @@ a {
 			opacity: 0.3;
 		}
 
-		&:hover::placeholder {
+		&:hover::placeholder,
+		&:focus-visible::placeholder {
 			opacity: 0.2;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			box-shadow: (0px 100px 80px rgba(0, 0, 0, 0.03)),
 				(0px 64.8px 46.8px rgba(0, 0, 0, 0.0227)),
 				(0px 38.5px 25.4px rgba(0, 0, 0, 0.0182)),
@@ -287,7 +290,6 @@ a {
 				(0px 20px 13px rgba(0, 0, 0, 0.015)),
 				(0px 8.1px 6.5px rgba(0, 0, 0, 0.0117)),
 				(0px 1.8px 3.1px rgba(0, 0, 0, 0.0072));
-			;
 		}
 
 		@media (max-width: 1039px) {
@@ -326,7 +328,8 @@ a {
 			position: static;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			background-color: rgba(248, 89, 71, 0.8);
 		}
 	}
@@ -355,7 +358,8 @@ a {
 	height: 100%;
 	transition: box-shadow 0.3s;
 
-	&:hover {
+	&:hover,
+	&:focus-visible {
 		box-shadow: (0px 100px 80px rgba(0, 0, 0, 0.03)),
 			(0px 64.8px 46.8px rgba(0, 0, 0, 0.0227)),
 			(0px 38.5px 25.4px rgba(0, 0, 0, 0.0182)),
@@ -621,7 +625,8 @@ a {
 		box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.07), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.0531481), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.0425185), 0px 20px 13px rgba(248, 90, 71, 0.035), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.0274815), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.0168519);
 		transition: background-color 0.3s, box-shadow 0.3s;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			background-color: rgba(248, 89, 71, 0.5);
 			box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.035), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.025), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.02), 0px 20px 13px rgba(248, 90, 71, 0.015), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.013), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.008);
 		}
@@ -694,7 +699,8 @@ a {
 			}
 		}
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			color: #F85A47;
 
 			&::after {
@@ -737,7 +743,8 @@ a {
 			padding: 0 0 81% 0;
 		}
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			.tabs-deals-block__image {
 				transform: scale(1.05);
 			}
@@ -769,7 +776,8 @@ a {
 		z-index: 10;
 		transition: background-color 0.3s;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			background-color: rgba(0, 0, 0, 0.2);
 		}
 
@@ -843,7 +851,8 @@ a {
 		padding: 0 0 74% 0;
 		overflow: hidden;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			.week-block__image-back {
 				transform: scale(1.05);
 			}
@@ -874,7 +883,8 @@ a {
 			(0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963)),
 			(48px 58px 44px rgba(0, 0, 0, 0.09));
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			.week-block__image-front {
 				transform: scale(1.05);
 			}
@@ -951,7 +961,8 @@ a {
 		border: 1px solid #F85A47;
 		transition: background-color 0.3s, box-shadow 0.3s;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			background-color: rgba(248, 89, 71, 0.5);
 			box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.035), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.025), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.02), 0px 20px 13px rgba(248, 90, 71, 0.015), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.013), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.008);
 		}
@@ -1019,7 +1030,8 @@ a {
 		padding: 52px 38px;
 		transition: border-color 0.3s, box-shadow 0.3s;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			border-color: #fff;
 			box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0227778), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0182222), 0px 20px 13px rgba(0, 0, 0, 0.015), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.0117778), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00722222), 3px 44px 54px rgba(0, 0, 0, 0.08);
 		}
@@ -1189,9 +1201,20 @@ a {
 		overflow: hidden;
 		transition: box-shadow 0.3s;
 
-		&:hover {
-			box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04), 0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704), 0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963), 0px 32.6px 13px rgba(0, 0, 0, 0.02), 0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037), 0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963),
-				0px 163px 80px rgba(0, 0, 0, 0.04), 0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704), 0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963), 0px 32.6px 13px rgba(0, 0, 0, 0.02), 0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037), 0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
+		&:hover,
+		&:focus-within {
+			box-shadow: 0px 163px 80px rgba(0, 0, 0, 0.04),
+				0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704),
+				0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963),
+				0px 32.6px 13px rgba(0, 0, 0, 0.02),
+				0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037),
+				0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963),
+				0px 163px 80px rgba(0, 0, 0, 0.04),
+				0px 105.648px 46.8519px rgba(0, 0, 0, 0.0303704),
+				0px 62.7852px 25.4815px rgba(0, 0, 0, 0.0242963),
+				0px 32.6px 13px rgba(0, 0, 0, 0.02),
+				0px 13.2815px 6.51852px rgba(0, 0, 0, 0.0157037),
+				0px 3.01852px 3.14815px rgba(0, 0, 0, 0.00962963);
 
 			.email-form-newsletter-block__email-label {
 				opacity: 0.2;
@@ -1248,7 +1271,8 @@ a {
 		border: 1px solid #F85A47;
 		transition: background-color 0.3s, box-shadow 0.3s;
 
-		&:hover {
+		&:hover,
+		&:focus-visible {
 			background-color: rgba(248, 89, 71, 0.5);
 			box-shadow: 0px 100px 80px rgba(248, 90, 71, 0.035), 0px 64.8148px 46.8519px rgba(248, 90, 71, 0.025), 0px 38.5185px 25.4815px rgba(248, 90, 71, 0.02), 0px 20px 13px rgba(248, 90, 71, 0.015), 0px 8.14815px 6.51852px rgba(248, 90, 71, 0.013), 0px 1.85185px 3.14815px rgba(248, 90, 71, 0.008);
 		}
