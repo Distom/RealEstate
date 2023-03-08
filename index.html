@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Real Estate</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script defer src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="header__menu menu">
+					<a class="menu__logo" href="#">SmartSpace</a>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#home" class="menu__link">Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="#about" class="menu__link">About</a>
+						</li>
+						<li class="menu__item">
+							<a href="#service" class="menu__link">Service</a>
+						</li>
+						<li class="menu__item">
+							<a href="#portfolio" class="menu__link">Portfolio</a>
+						</li>
+						<li class="menu__item">
+							<a href="#blog" class="menu__link">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a href="#contact" class="menu__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__main main-block" id="home">
+				<div class="main-block__container">
+					<div class="main-block__row">
+						<div class="main-block__body body-main-block">
+							<h2 class="body-main-block__sub-title">
+								RESIDENTIAL & OFFICE SPACES
+							</h2>
+							<h1 class="body-main-block__title title">
+								Smart Living Style for Smart People
+							</h1>
+							<p class="body-main-block__text">
+								Much did had call new drew that kept. Limits expect wonder law she. Now has you views woman noisy match
+								money rooms.
+							</p>
+							<form class="body-main-block__search search-form" action="#">
+								<label class="search-form__label" for="zipcode">Enter zipcode</label>
+								<input class="search-form__input" placeholder="Enter Zipcode to search properties" type="text"
+									id="zipcode" pattern="^\d{5}([-]|\s*)?(\d{4})?$" required>
+								<label class="search-form__label" for="search-zipcode">Press to search information by zipcode</label>
+								<button type="submit" id="search-zipcode" class="search-form__search">Search Now!</button>
+							</form>
+						</div>
+						<div class="main-block__illustration illustration-main-block">
+							<!-- Slider main container -->
+							<div class="illustration-main-block__swiper swiper">
+								<!-- Additional required wrapper -->
+								<div class="swiper__wrapper swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper__slide swiper-slide">
+										<img class="swiper-slide__image" src="img/main-block/slider/1.jpg" alt="House photo">
+									</div>
+									<div class="swiper__slide swiper-slide">
+										<img class="swiper-slide__image" src="img/main-block/slider/2.jpg" alt="House photo">
+									</div>
+									<div class="swiper__slide swiper-slide">
+										<img class="swiper-slide__image" src="img/main-block/slider/3.jpg" alt="House photo">
+									</div>
+								</div>
+							</div>
+							<button class="swiper__button-prev swiper-button-prev"></button>
+							<button class="swiper__button-next swiper-button-next"></button>
+						</div>
+					</div>
+					<div class="main-block__partners partners-main-block">
+						<h3 class="partners-main-block__title">
+							Our Amazing Partners
+						</h3>
+						<ul class="partners-main-block__body">
+							<li class="partners-main-block__partner">
+								<img src="img/main-block/partners/1.svg" class="partners-main-block__item" alt="Buzz logo">
+							</li>
+							<li class="partners-main-block__partner">
+								<img src="img/main-block/partners/2.svg" class="partners-main-block__item" alt="Chase logo">
+							</li>
+							<li class="partners-main-block__partner">
+								<img src="img/main-block/partners/3.svg" class="partners-main-block__item" alt="Mirosoft logo">
+							</li>
+							<li class="partners-main-block__partner">
+								<img src="img/main-block/partners/4.svg" class="partners-main-block__item" alt="Gucc logo">
+							</li>
+							<li class="partners-main-block__partner">
+								<img src="img/main-block/partners/5.svg" class="partners-main-block__item" alt="Airbnb logo">
+							</li>
+							<li class="partners-main-block__partner">
+								<img src="img/main-block/partners/6.svg" class="partners-main-block__item" alt="Uber logo">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page__how how-block" id="about">
+				<div class="how-block__container">
+					<h2 class="how-block__title title">How it works?</h2>
+					<ul class="how-block__row">
+						<li class="how-block__item item-how-block">
+							<img class="item-how-block__image item-how-block__image_violet" src="img/how-block/search.svg"
+								alt="search icon">
+							<h3 class="item-how-block__title">Research Suburbs</h3>
+							<p class="item-how-block__text">
+								Wonder twenty hunted and put income set desire expect. Am cottage calling.
+							</p>
+						</li>
+						<li class="how-block__item item-how-block">
+							<img class="item-how-block__image item-how-block__image_blue" src="img/how-block/valuation.svg"
+								alt="valuation icon">
+							<h3 class="item-how-block__title">Instant Valuation</h3>
+							<p class="item-how-block__text">
+								Conveying or northward offending admitting perfectly my. Colonel gravit and moonlight.
+							</p>
+						</li>
+						<li class="how-block__item item-how-block">
+							<img class="item-how-block__image item-how-block__image_pink" src="img/how-block/property.svg"
+								alt="property icon">
+							<h3 class="item-how-block__title">Track Property</h3>
+							<p class="item-how-block__text">
+								Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible.
+							</p>
+						</li>
+						</г>
+				</div>
+			</section>
+			<section class="page__deals deals-block" id="service">
+				<div class="deals-block__container">
+					<div class="deals-block__body">
+						<div class="deals-block__description">
+							<h2 class="deals-block__title title">Best Real Estate Deals</h2>
+							<p class="deals-block__text">
+								Colonel gravity get thought fat smiling add but. Wonder twenty hunted and put income set desire expect.
+							</p>
+						</div>
+						<a href="#" class="deals-block__button">View All Property</a>
+					</div>
+					<div class="deals-block__tabs tabs-deals-block">
+						<ul class="tabs-deals-block__names">
+							<li class="tabs-deals-block__name">
+								<a href="#" class="tabs-deals-block__link tabs-deals-block__link_selected"
+									data-tab-name="residential">Residential Property</a>
+							</li>
+							<li class="tabs-deals-block__name">
+								<a href="#" class="tabs-deals-block__link" data-tab-name="commercial">Commercial Property</a>
+							</li>
+							<li class="tabs-deals-block__name">
+								<a href="#" class="tabs-deals-block__link" data-tab-name="agriculture">Agriculture Property</a>
+							</li>
+							<li class="tabs-deals-block__name">
+								<a href="#" class="tabs-deals-block__link" data-tab-name="industrial">Industrial Property</a>
+							</li>
+						</ul>
+						<ul class="tabs-deals-block__illustrations" data-tab-body="residential">
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_second">3D</a>
+								<img src="img/deals-block/residential/1.png" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_second">3D</a>
+								<img src="img/deals-block/residential/2.png" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<img src="img/deals-block/residential/3.png" alt="House photo" class="tabs-deals-block__image">
+							</li>
+						</ul>
+						<ul class="tabs-deals-block__illustrations" data-tab-body="commercial" hidden>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">3D</a>
+								<img src="img/deals-block/commercial/1.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_second">3D</a>
+								<img src="img/deals-block/commercial/2.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<img src="img/deals-block/commercial/3.webp" alt="House photo" class="tabs-deals-block__image">
+							</li>
+						</ul>
+						<ul class="tabs-deals-block__illustrations" data-tab-body="agriculture" hidden>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<img src="img/deals-block/agriculture/1.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<img src="img/deals-block/agriculture/2.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+						</ul>
+						<ul class="tabs-deals-block__illustrations" data-tab-body="industrial" hidden>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<img src="img/deals-block/industrial/1.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<img src="img/deals-block/industrial/2.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+							<li class="tabs-deals-block__illustration">
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_first">Featured</a>
+								<a href="#" class="tabs-deals-block__button tabs-deals-block__button_second">3D</a>
+								<img src="img/deals-block/industrial/3.jpg" alt="House photo" class="tabs-deals-block__image">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="page__week week-block" id="portfolio">
+				<div class="week-block__container">
+					<h2 class="week-block__title title">Featured Listing of the Week</h2>
+					<div class="week-block__row">
+						<div class="week-block__illustration">
+							<div class="week-block__illustration-back">
+								<img src="img/week-block/back.png" alt="House photo" class="week-block__image-back">
+							</div>
+							<div class="week-block__illustration-front">
+								<img src="img/week-block/front.png" alt="House room photo" class="week-block__image-front">
+							</div>
+						</div>
+						<div class="week-block__body">
+							<h3 class="week-block__subtitle">The and collecting for the motionless difficulty son.</h3>
+							<p class="week-block__text">
+								Conveying or northward offending admitting perfectly my. Colonel gravity get thought fat smiling add but
+								difficult situations.
+							</p>
+							<ul class="week-block__options">
+								<li class="week-block__option option-week-block">
+									<div class="option-week-block__name">Budget</div>
+									<div class="option-week-block__data">Confidential</div>
+								</li>
+								<li class="week-block__option option-week-block">
+									<div class="option-week-block__name">Size</div>
+									<div class="option-week-block__data">1200 m<span class="option-week-block__data_degree">2</span></div>
+								</li>
+								<li class="week-block__option option-week-block">
+									<div class="option-week-block__name">Type</div>
+									<div class="option-week-block__data">Office</div>
+								</li>
+								<li class="week-block__option option-week-block">
+									<div class="option-week-block__name">Status</div>
+									<div class="option-week-block__data">Done</div>
+								</li>
+								<li class="week-block__option option-week-block">
+									<div class="option-week-block__name">Location</div>
+									<div class="option-week-block__data">Switzerland</div>
+								</li>
+								<li class="week-block__option option-week-block">
+									<div class="option-week-block__name">Flat</div>
+									<div class="option-week-block__data">8 Room</div>
+								</li>
+							</ul>
+							<a href="#" class="week-block__button">YES! I WANT BOOK “OFFICE PACKAGE”</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__reviews reviews-block" id="blog">
+				<div class="reviews-block__container">
+					<h2 class="reviews-block__title title">Loved by businesses, and individuals across the globe.</h2>
+					<ul class="reviews-block__items">
+						<li class="reviews-block__item item-reviews-block">
+							<div class="item-reviews-block__stars">
+							</div>
+							<q class="item-reviews-block__text">
+								Moderate children at of outweigh it. Unsatiable it considered invitation he travelling insensible.
+								Consulted admitting oh mr up as described.
+							</q>
+							<address class="item-reviews-block__author author-item-reviews-block">
+								<div class="author-item-reviews-block__author-photo">
+									<img src="img/reviews-block/authors/Jane.png" class="author-item-reviews-block__image"
+										alt="Jane Cooper photo">
+								</div>
+								<div class="author-item-reviews-block__data">
+									<div class="author-item-reviews-block__name">Jane Cooper</div>
+									<div class="author-item-reviews-block__adress">Los Angeles, CA</div>
+								</div>
+							</address>
+						</li>
+						<li class="reviews-block__item item-reviews-block">
+							<div class="item-reviews-block__stars">
+							</div>
+							<q class="item-reviews-block__text">
+								The and collecting motionless difficulty son. His hearing staying ten colonel met. Sex drew six easy
+								four dear cold.
+							</q>
+							<address class="item-reviews-block__author author-item-reviews-block">
+								<div class="author-item-reviews-block__author-photo">
+									<img src="img/reviews-block/authors/Robert.png" class="author-item-reviews-block__image"
+										alt="Robert Fox photo">
+								</div>
+								<div class="author-item-reviews-block__data">
+									<div class="author-item-reviews-block__name">Robert Fox</div>
+									<div class="author-item-reviews-block__adress">New York City, NY</div>
+								</div>
+							</address>
+						</li>
+						<li class="reviews-block__item item-reviews-block">
+							<div class="item-reviews-block__stars">
+							</div>
+							<q class="item-reviews-block__text">
+								Sociable on as carriage my position weddings raillery consider. Peculiar trifling absolute and wandered
+								vicinity property yet.
+							</q>
+							<address class="item-reviews-block__author author-item-reviews-block">
+								<div class="author-item-reviews-block__author-photo">
+									<img src="img/reviews-block/authors/Leslie.png" class="author-item-reviews-block__image"
+										alt="Leslie Alexander photo">
+								</div>
+								<div class="author-item-reviews-block__data">
+									<div class="author-item-reviews-block__name">Leslie Alexander</div>
+									<div class="author-item-reviews-block__adress">Buffalo, NJ</div>
+								</div>
+							</address>
+						</li>
+					</ul>
+					<div class="reviews-block__footer">
+						<ul class="reviews-block__companies">
+							<li class="reviews-block__company">
+								<img src="img/reviews-block/logotypes/1.svg" class="reviews-block__company-image" alt="Airbnb logo">
+							</li>
+							<li class="reviews-block__company">
+								<img src="img/reviews-block/logotypes/2.svg" class="reviews-block__company-image" alt="Cisco logo">
+							</li>
+							<li class="reviews-block__company">
+								<img src="img/reviews-block/logotypes/3.svg" class="reviews-block__company-image" alt="Ebay logo">
+							</li>
+							<li class="reviews-block__company">
+								<img src="img/reviews-block/logotypes/4.svg" class="reviews-block__company-image" alt="Uber logo">
+							</li>
+							<li class="reviews-block__company">
+								<img src="img/reviews-block/logotypes/5.svg" class="reviews-block__company-image" alt="Microsoft logo">
+							</li>
+						</ul>
+						<p class="reviews-block__contacts">
+							Give us a Call <a href="tel:+18881112222">1-888-111-2222</a> and we can set you up, or
+							<a href="#" class="reviews-block__link">check our pricing plans</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="page__newsletter newsletter-block" id="contact">
+				<div class="newsletter-block__container">
+					<h2 class="newsletter-block__title title">Get Our Newsletter</h2>
+					<h3 class="newsletter-block__subtitle">To join the worldwide community</h3>
+					<form class="newsletter-block__email-form email-form-newsletter-block" action="#">
+						<div class="email-form-newsletter-block__body">
+							<label for="email" class="email-form-newsletter-block__email-label">Type your Email Address</label>
+							<input id="email" class="email-form-newsletter-block__email" type="text"
+								pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$"
+								required>
+						</div>
+						<label class="email-form-newsletter-block__submit-label" for="send-email">Press to send your Email
+							Address</label>
+						<button type="submit" class="email-form-newsletter-block__button" id="send-email">Send Now</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<nav class="footer__menu menu">
+					<a class="menu__logo" href="#">SmartSpace</a>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#home" class="menu__link menu__link_selected">Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="#about" class="menu__link">About</a>
+						</li>
+						<li class="menu__item">
+							<a href="#service" class="menu__link">Service</a>
+						</li>
+						<li class="menu__item">
+							<a href="#portfolio" class="menu__link">Portfolio</a>
+						</li>
+						<li class="menu__item">
+							<a href="#blog" class="menu__link">Blog</a>
+						</li>
+						<li class="menu__item">
+							<a href="#contact" class="menu__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<p class="footer__copyright">
+					Copyright © 2021 AR Shakir . All Rights Reseved.
+				</p>
+			</div>
+		</footer>
+	</div>
+
+</body>
+
+</html>
