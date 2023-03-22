@@ -12,9 +12,41 @@ const swiper = new Swiper('.swiper', {
 	}
 });
 
+let menu = document.querySelector('.menu');
+let menuBtn = document.querySelector('.menu__button');
+let menuBurgerActive = false;
+
+let tabsElem = document.querySelector('.tabs-deals-block');
+let tabLinks = document.querySelectorAll('.tabs-deals-block__link');
+let isSwitchingTabs = false;
+let transitionTime = 300;
+
+tabLinks.forEach(link => {
+	link.onclick = switchTabs;
+});
+
 addScrollInto();
 window.onresize = function () {
 	addScrollInto();
+}
+
+menuBtn.addEventListener('click', toggleMenu);
+window.addEventListener('resize', removeMenuBurger);
+
+function removeMenuBurger() {
+	if (window.innerWidth > 768 && menuBurgerActive) {
+		menuBurgerActive = false;
+		menu.classList.remove('menu_active');
+		menuBtn.classList.remove('menu__button_active');
+		document.body.classList.remove('lock');
+	}
+}
+
+function toggleMenu() {
+	menu.classList.toggle('menu_active');
+	menuBtn.classList.toggle('menu__button_active');
+	document.body.classList.toggle('lock');
+	menuBurgerActive = !menuBurgerActive;
 }
 
 function addScrollInto() {
@@ -24,6 +56,9 @@ function addScrollInto() {
 	let menuLinks = document.querySelectorAll('.menu__link');
 	menuLinks.forEach(link => {
 		link.onclick = function (event) {
+			if (menu.classList.contains('menu_active')) {
+				toggleMenu();
+			}
 			let href = this.getAttribute('href');
 			if (!href || href == '#') return;
 
@@ -34,16 +69,6 @@ function addScrollInto() {
 		}
 	});
 }
-
-
-let tabsElem = document.querySelector('.tabs-deals-block');
-let tabLinks = document.querySelectorAll('.tabs-deals-block__link');
-let isSwitchingTabs = false;
-let transitionTime = 300;
-
-tabLinks.forEach(link => {
-	link.onclick = switchTabs;
-});
 
 async function switchTabs(event) {
 	event.preventDefault();
