@@ -14,6 +14,7 @@ const swiper = new Swiper('.swiper', {
 
 let menu = document.querySelector('.menu');
 let menuBtn = document.querySelector('.menu__button');
+let header = document.querySelector('.header');
 let menuBurgerActive = false;
 
 let tabsElem = document.querySelector('.tabs-deals-block');
@@ -35,10 +36,7 @@ window.addEventListener('resize', removeMenuBurger);
 
 function removeMenuBurger() {
 	if (window.innerWidth > 768 && menuBurgerActive) {
-		menuBurgerActive = false;
-		menu.classList.remove('menu_active');
-		menuBtn.classList.remove('menu__button_active');
-		document.body.classList.remove('lock');
+		toggleMenu();
 	}
 }
 
@@ -64,7 +62,14 @@ function addScrollInto() {
 
 			let target = document.querySelector(href);
 			if (!target) return;
-			target.scrollIntoView({ behavior: 'smooth', block: position });
+
+			if (width < 768) {
+				position = target.getBoundingClientRect().top + scrollY - header.offsetHeight;
+				scrollTo({ behavior: 'smooth', top: position });
+			} else {
+				target.scrollIntoView({ behavior: 'smooth', block: position });
+			}
+
 			event.preventDefault();
 		}
 	});
